@@ -6,14 +6,11 @@ public class Student {
 	String name;
 	int marks;
 	
-	void displayStudentDetails(int roll, String name, int marks,int roll2,String name2,int marks2) {
+	void displayStudentDetails(int roll, String name, int marks) {
 		System.out.println("RollNo is :" +roll);
 		System.out.println("Name is:" +name);
 		System.out.println("Marks:"+marks);
 		
-		System.out.println("RollNo is :" +roll2);
-		System.out.println("Name is:" +name2);
-		System.out.println("Marks:"+marks2);
 	}
 	
 	public static void main(String[] args) {
@@ -30,7 +27,8 @@ public class Student {
 		int marks2 = s2.marks = 54;
 		
 		
-		s.displayStudentDetails(roll,name,marks,roll2,name2,marks2);
+		s.displayStudentDetails(roll,name,marks);
+		s2.displayStudentDetails(roll2, name2, marks2);
 		
 		
 	}
