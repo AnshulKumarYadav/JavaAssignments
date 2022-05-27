@@ -10,21 +10,27 @@ public class Student {
 	}
 	
 	double payFee() {
+		double a = 334.66;
+		return a;
+		
 		
 	}
+	public Student() {
+		// TODO Auto-generated constructor stub
+	}
 	
-	abstract void Fee();
-	
-
 }
 
-class DayScholar{
+class DayScholar extends Student{
 	double transportFee;
 }
-class Hosteller{
+class Hosteller extends Student{
 	double hostelFee ;
+	public Hosteller() {
+		// TODO Auto-generated constructor stub
+	}
 	
-	abstract void fees();
+	
 }
 //Class Student:
 //Instance Variables:

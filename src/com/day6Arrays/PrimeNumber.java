@@ -4,7 +4,23 @@ package com.day6Arrays;
 
 public class PrimeNumber {
 	public int[] findAndReturnPrimeNumbers(int[] arr) {
-		return arr;
+		boolean isPrime = true;
+		int[]a= new int[arr.length];
+		for(int i=0;i<arr.length;i++)
+		{
+			for(int j=2;j<arr[i];j++)
+			{
+				if(arr[i]%j==0)
+				{
+					isPrime = false;
+					break;
+				}
+				else {
+					a[j]=arr[j];
+				}
+			}
+		}
+		 return a;
 		
 	}
 	public static void main(String[] args) {
@@ -14,7 +30,19 @@ public class PrimeNumber {
 		System.out.println(ans);
 	}
 }
-
+//var isPrime = true;
+//for (var i = 2; i < num; i++) {
+//   if(num % i == 0) {
+//       isPrime = false;
+//       break;
+//   }
+//}
+//
+//if (isPrime) {
+//   console.log("Yes");
+//} else {
+//   console.log("No");
+//}
 
 
 /*
