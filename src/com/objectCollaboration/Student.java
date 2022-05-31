@@ -52,6 +52,7 @@ public class Student {
 		{
 			
 		}
+		return new Student();
 		
 	}
 //	<<-------------------------------------------->>

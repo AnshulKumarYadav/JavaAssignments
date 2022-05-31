@@ -19,6 +19,7 @@ public class SuppertInheritance {
 		b.display();
 	}
 	
+	
 }
 
 class C{
@@ -27,7 +28,7 @@ class C{
 		System.out.println("I am in class C");
 	}
 }
-class B extends SuppertInheritance,C{
+class B extends SuppertInheritance{
 	@Override
 	void display() {
 		System.out.println("I am in class B");

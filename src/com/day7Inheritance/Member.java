@@ -8,6 +8,7 @@ public class Member {
 	String Phone_number;
 	String Address;
 	double Salary;
+//	<<----------------------------------------------------->>
 	
 	void printSalary() {
 		System.out.println("The Salary is:" +Salary);
