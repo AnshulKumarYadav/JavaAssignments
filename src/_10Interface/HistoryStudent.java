@@ -7,7 +7,11 @@ public class HistoryStudent extends Student {
 	
 	@Override
 	void getPercentage() {
-		System.out.println(name+ " is a HistoryStudent and there percentage of marks is: "+((historyMarks+civicsMarks)/200) + "and belong to "+ address);
+		System.out.println("The name is: "+name);
+		System.out.println("The address of student is: "+address);
+		double result = ((double)getHistoryMarks()+(double)getCivicsMarks()/200)*100;
+		System.out.println("The percentage is : "+result);
+//		System.out.println(name+ " is a HistoryStudent and there percentage of marks is: "+((historyMarks+civicsMarks)/200) + "and belong to "+ address);
 	}
 
 	public int getHistoryMarks() {

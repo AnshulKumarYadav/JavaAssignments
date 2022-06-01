@@ -31,7 +31,7 @@ public class AllStudents {
 				int c = sc.nextInt();
 				System.out.println("Enter marks in Maths: ");
 				int m = sc.nextInt();
-				ScienceStudent scienceStudent = new ScienceStudent();
+				ScienceStudent scienceStudent = (ScienceStudent) student;
 				scienceStudent.setPhysicsMarks(p);
 				scienceStudent.setChemistryMarks(c);
 				scienceStudent.setMathsMarks(m);
@@ -43,10 +43,12 @@ public class AllStudents {
 				int h = sc.nextInt();
 				System.out.println("Enter marks in Civics: ");
 				int civic = sc.nextInt();
-				HistoryStudent historyStudent = new HistoryStudent();
+				HistoryStudent historyStudent = (HistoryStudent) s1;
 				historyStudent.setHistoryMarks(h);
 				historyStudent.setCivicsMarks(civic);
 				historyStudent.getPercentage();
+				
+				
 			}
 			else {
 				System.out.println("Enter a valid stream (Science or History)");
