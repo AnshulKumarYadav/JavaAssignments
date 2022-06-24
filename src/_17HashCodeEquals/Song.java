@@ -22,6 +22,21 @@ public class Song {
 		return Objects.equals(movieName, other.movieName) && Objects.equals(songName, other.songName);
 	}
 	
+	
+	public String getMovieName() {
+		return movieName;
+	}
+	public void setMovieName(String movieName) {
+		this.movieName = movieName;
+	}
+	public String getSongName() {
+		return songName;
+	}
+	public void setSongName(String songName) {
+		this.songName = songName;
+	}
+	
+	
 	public Song() {
 
 	}
