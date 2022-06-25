@@ -1,9 +1,11 @@
 package _20StreamFilter;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Main {
+	
 	public static void main(String[] args) {
 		List<Student> students = new ArrayList<>();
 		students.add(new Student(12,"Raman",856));
@@ -22,3 +24,7 @@ public class Main {
 		});
 	}
 }
+
+//"editor.background": "#23272e",
+
+//"editor.selectionBackground": "#67769660",
